@@ -1,0 +1,55 @@
+form {
+  padding: 150px;
+  font-family: arial;
+  font-size: 12px; }
+
+select {
+  position: absolute;
+  top: -150px; }
+
+.seelect-wrapper {
+  display: block;
+  position: relative; }
+  .seelect-wrapper .seelect-el:focus .seelect-item {
+    border-color: #0068a1; }
+  .seelect-wrapper .seelect-item {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 44px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase; }
+  .seelect-wrapper ul {
+    display: none; }
+  .seelect-wrapper.open .seelect-item {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .seelect-wrapper.open .seelect-list {
+    padding: 10px; }
+  .seelect-wrapper.open ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 44px;
+    width: 100%; }
+    .seelect-wrapper.open ul li {
+      border-bottom: 1px solid #0068a1;
+      border-left: 1px solid #0068a1;
+      border-right: 1px solid #0068a1;
+      min-height: 44px; }
+      .seelect-wrapper.open ul li:first-child {
+        padding: 0; }
+      .seelect-wrapper.open ul li.selected {
+        background: #e6f4f9;
+        font-weight: bold; }
+      .seelect-wrapper.open ul li:hover, .seelect-wrapper.open ul li:focus {
+        background: #e6f4f9; }
+
+/*# sourceMappingURL=styles.css.map */
